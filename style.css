@@ -432,10 +432,15 @@ section {
         flex: 0 0 80%;
         padding: 15px;
         margin: 20px auto;
+        height: 330px !important;
+    }
+
+    .menWatch h5 {
+        font-size: 20px;
     }
 
     .watch-img {
-        max-height: 150px;
+        max-height: 180px;
     }
 
     .company {
@@ -671,4 +676,72 @@ section {
     .social-icons {
         justify-content: center;
     }
+}
+
+.add-cart {
+    background-color: #d4af37;
+    color: #000;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.add-cart:hover {
+    background-color: #b8942f;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+.add-cart i {
+    font-size: 16px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .add-cart {
+        font-size: 14px;
+        padding: 8px 15px;
+
+    }
+
+    .add-cart i {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .add-cart {
+        font-size: 8px;
+        padding: 8px 12px;
+        text-wrap: nowrap;
+
+    }
+
+    .add-cart i {
+        font-size: 12px;
+    }
+}
+
+
+.menWatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+}
+
+.add-cart {
+    margin-top: auto;
 }
